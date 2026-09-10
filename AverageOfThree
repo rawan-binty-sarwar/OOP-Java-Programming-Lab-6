@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class AverageOfThree {
+
+    static double findAverage(double a, double b, double c) {
+        return (a + b + c) / 3;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Input the first number: ");
+        double a = sc.nextDouble();
+
+        System.out.print("Input the second number: ");
+        double b = sc.nextDouble();
+
+        System.out.print("Input the third number: ");
+        double c = sc.nextDouble();
+
+        double average = findAverage(a, b, c);
+
+        System.out.println("The average value is " + average + ".");
+
+        sc.close();
+    }
+}
